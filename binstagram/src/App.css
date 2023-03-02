@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+body{
+margin: 0;
+padding: 0;
+
+}
+
+header{
+  display: flex;
+  width: 60dvw;
+  height: 120px;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-inline: auto;
+}
+
+.logo{
+  width: 112px;
+  height: auto;
+
+}
+
+.container{
+  display: flex;
+  width: 60dvw;
+  padding: 0.5rem;
+  margin-inline: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.main-image{
+  background-color: #ccc;
+  border-radius: 0.5rem;
+}
+
+.main-image img{
+  width: 100%;
+  height: auto;
+}
+
+.details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.description{
+  width: 80%;
+  
+}
+
+.share{
+  width:19%;
+}
+
+.views{
+  width: 28%;
+}
+
+.likes{
+  width:28%;
+}
+
+.like{
+  width:19%;
+}
+
+.img-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev{
+  padding:0.5rem;
+  background-color: hsl(120, 30%, 50%);
+  border: 0;
+  border-radius: 6px;
+}
+.next{
+  padding:0.5rem;
+  background-color: hsl(120, 30%, 50%);
+  border: 0;
+  border-radius: 6px;
+}
+
+.prev:hover{
+  
+  background-color: hsl(120, 30%, 35%);
+}
+.next:hover{
+  
+  background-color: hsl(120, 30%, 35%);
+}
+
+footer{
+  background-color: antiquewhite;
+  min-height:120px;
+}
+
+
+
+
+.App {
+  text-align: center;
+}
+
