@@ -1,25 +1,43 @@
-import Task from "./Task";
+const TasksForm = ({ task, setTask, setTaskList, taskList }) => {
+  //console.log(task);
+    let showError = null;
 
-const TasksForm =({task, setTask, setTaskList, taskList}) =>{
-    console.log(task)
-    const handlerSubmit = (event) =>{
+    const errorMessage = () => {
+        showError = true; // This will need updating on a state, so the html is rerendered
+        alert("task exists");
+    };
 
-        event.preventDefault();
-        
-        setTaskList(taskList=>[...taskList, task]);
-
+  const handlerSubmit = (event) => {
+    event.preventDefault();
+    if (task.length === 0) return;
+    
+    if (taskList.includes(task)) {
+        errorMessage();
+        return;
     }
-    return(
-        <section>
-            <form onSubmit={handlerSubmit}>
-            <label htmlFor="taskInput"></label>
-            <input type="text" id="taskInput" value={task} 
-            onChange={(event)=>setTask(event.target.value)}>   
-            </input>
-            <button type="submit">Add</button>
-            </form>
-        </section>
-    )
-}
+
+    setTaskList((taskList) => [...taskList, task]);
+    setTask("");
+  };
+
+  return (
+    <section className="form-section">
+      <div className={showError ? 'message' : 'no-message'}>Task exists</div>
+      <form onSubmit={handlerSubmit}>
+        <label htmlFor="taskInput">
+          Task: <span className="tiny-text">(*required)</span>
+        </label>
+        <input
+          type="text"
+          id="taskInput"
+          value={task}
+          onChange={(event) => setTask(event.target.value)}
+          placeholder="Add a task..."
+        ></input>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+  );
+};
 
 export default TasksForm;

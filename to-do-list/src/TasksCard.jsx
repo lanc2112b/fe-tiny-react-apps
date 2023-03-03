@@ -6,14 +6,19 @@ const TasksCard = () =>{
     const [task, setTask] = useState("");
     const [taskList, setTaskList] = useState([]);
 
-    console.log(taskList)
+    //console.log(taskList)
     //pass the state of tasks form updates task list
-    return(
-        <section> 
-            <TasksForm task={task} setTask={setTask} setTaskList={setTaskList} taskList={taskList}/>
-            <TasksList taskList={taskList}/>
-        </section>
-    )
+    return (
+      <section className="tasks-card">
+        <TasksForm
+          task={task}
+          setTask={setTask}
+          setTaskList={setTaskList}
+          taskList={taskList}
+        />
+        <TasksList taskList={taskList} setTaskList={setTaskList} />
+      </section>
+    );
 }
 
 export default TasksCard;
