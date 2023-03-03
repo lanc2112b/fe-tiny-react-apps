@@ -1,5 +1,5 @@
-const ImageNav = ({index, setIndex}) => {
-  const next= index+1;
+const ImageNav = ({index, setIndex, count}) => {
+  const next = index === (count - 1) ? index : index + 1;
   const prev = index === 0 ? 0 : index - 1;
   const onClickHandler = (value) =>{
       console.log(value.target.value)
