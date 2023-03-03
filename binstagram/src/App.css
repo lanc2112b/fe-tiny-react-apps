@@ -1,6 +1,8 @@
-*{
+html {
   box-sizing: border-box;
-  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -9,45 +11,56 @@ padding: 0;
 
 }
 
+.App {
+  width: 100dvw;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
+
 header{
+  display: flex;
+  width: 60dvw;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-inline: auto;
+  background-color: antiquewhite;
+  border-radius:0 0 0.5rem 0.5rem;
+}
+
+.container{
+  display: flex;
+  width: 60dvw;
+  margin-inline: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer{
+  background-color: antiquewhite;
   display: flex;
   width: 60dvw;
   height: 120px;
   justify-content: space-between;
   padding: 0.5rem;
   margin-inline: auto;
-}
-
-.logo{
-  width: 112px;
-  height: auto;
-
-}
-
-.container{
-  display: flex;
-  width: 60dvw;
-  padding: 0.5rem;
-  margin-inline: auto;
-  flex-wrap: wrap;
-  flex-direction: column;
+  border-radius:0.5rem 0.5rem 0 0 ;
 }
 
 .title{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  align-items: baseline;
+  padding: 1rem 0.5rem;
 }
 
 .main-image{
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  padding: 0 0.5rem;
   border-radius: 0.5rem;
-}
-
-.main-image img{
-  width: 100%;
-  height: auto;
 }
 
 .details{
@@ -55,65 +68,127 @@ header{
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 2rem;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+.title h2, p {
+  margin: 0;
+}
+
+.main-image img{
+  width: max(60dvw - 1rem);
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 .description{
   width: 80%;
-  
+  margin-bottom:1rem;
+  text-align: left;
 }
 
 .share{
   width:19%;
+  text-align: right;
+  display: flex;
+  justify-content:flex-end;
+  margin-bottom:1rem;
+}
+
+.share button {
+  padding: 0.5rem;
+  background-color: hsla(0, 0%, 0%, 0%);
+  border: none;
+}
+
+.share button::before{
+  display: block;
+  content: ' ';
+  background-image: url('../public/share.svg');
+  background-size: 2rem 2rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .views{
   width: 28%;
+  text-align: left;
+  flex-grow: 1 2;
 }
 
 .likes{
   width:28%;
+  flex-grow: 1 3;
 }
 
 .like{
   width:19%;
+  text-align: right;
+  flex-grow: 1 2;
+}
+
+.like button {
+  padding: 0.5rem;
+  background-color: hsla(0, 0%, 0%, 0%);
+  border: none;
+}
+.like button::before{
+  display: block;
+  content: ' ';
+  background-image: url('../public/heart.svg');
+  background-size: 2rem 2rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .img-nav{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+  padding-inline: 1rem;
 }
 
 .prev{
-  padding:0.5rem;
-  background-color: hsl(120, 30%, 50%);
+  padding:0.5rem 1rem;
+  background-color: hsl(120, 30%, 55%);
   border: 0;
   border-radius: 6px;
+  font-weight: 700;
 }
 .next{
-  padding:0.5rem;
-  background-color: hsl(120, 30%, 50%);
+  padding:0.5rem 1rem;
+  background-color: hsl(120, 30%, 55%);
   border: 0;
   border-radius: 6px;
+  font-weight: 700;
 }
 
+.prev::before {
+  content: '<< ';
+}
+
+.next::after {
+  content: ' >>';
+}
 .prev:hover{
   
-  background-color: hsl(120, 30%, 35%);
+  background-color: hsl(120, 30%, 50%);
 }
 .next:hover{
   
-  background-color: hsl(120, 30%, 35%);
+  background-color: hsl(120, 30%, 50%);
 }
 
-footer{
-  background-color: antiquewhite;
-  min-height:120px;
+.author p span {
+  font-style: italic;
 }
 
-
-
-
-.App {
-  text-align: center;
-}
 

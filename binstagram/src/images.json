@@ -1,0 +1,56 @@
+{ "pageData": [ {
+    "image": {
+        "titleCard": {"title": "A nice picture", "by": "Vince Noir" },
+        "imgUrl": "pexels-dastan-khdir-13351559.jpg",
+        "details": {
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
+            "views": 12,
+            "likes": 4,
+            "shareUrl": ""
+        }
+    }},
+    {
+        "image": {
+            "titleCard": {
+                "title": "Another nice picture",
+                "by": "Naboo"
+            },
+            "imgUrl": "pexels-taha-samet-arslan-7624629.jpg",
+            "details": {
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
+                "views": 10,
+                "likes": 7,
+                "shareUrl": ""
+            }
+        }
+    },
+    {
+        "image": {
+            "titleCard": {
+                "title": "Another nice picture",
+                "by": "Howard Moon"
+            },
+            "imgUrl": "pexels-olena-bohovyk-10718877.jpg",
+            "details": {
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
+                "views": 10,
+                "likes": 7,
+                "shareUrl": ""
+            }
+        }
+    },
+    {
+        "image": {
+            "titleCard": {
+                "title": "Another nice picture",
+                "by": "Howling Jimmy Jefferson"
+            },
+            "imgUrl": "pexels-serhii-volyk-15460077.jpg",
+            "details": {
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
+                "views": 10,
+                "likes": 7,
+                "shareUrl": ""
+            }
+        }
+    }]}
