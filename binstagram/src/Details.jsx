@@ -1,29 +1,31 @@
-const Details = (imageDetail) => {
-  //console.log(imageDetail.imageDetail[1], "<< function");
+const Details = ({ details, likes, setLikes}) => {
+
   return (
     <section className="details">
       <div className="description">
-        <p>{imageDetail.imageDetail[0].desc}</p>
+        <p>{details.desc}</p>
       </div>
       <div className="share">
         <button>Share</button>
       </div>
       <div className="views">
         <p>
-          Views: <span>{imageDetail.imageDetail[0].views}</span>
+          Views: <span>{details.views}</span>
         </p>
       </div>
       <div className="likes">
         <p>
-          Likes: <span>{imageDetail.imageDetail[1]}</span>
+          Likes: <span>{likes + details.likes} Vs. Actual {details.likes}</span>
         </p>
       </div>
       <div className="like">
         <button
           onClick={() => {
-            imageDetail.imageDetail[2](imageDetail.imageDetail[1] + 1);
+              setLikes(likes + 1);
           }}
-        >Like</button>
+        >
+          Like
+        </button>
       </div>
     </section>
   );
