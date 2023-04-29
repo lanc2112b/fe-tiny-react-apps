@@ -15,7 +15,7 @@ const CardCollection = () => {
   
   const count = pageData.pageData.length;
   
-  let [likes, setLikes] = useState(0);
+  const [likes, setLikes] = useState(0);
 
   return (
     <main className="container">
