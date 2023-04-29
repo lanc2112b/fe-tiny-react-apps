@@ -4,7 +4,7 @@
         "imgUrl": "pexels-dastan-khdir-13351559.jpg",
         "details": {
             "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
-            "views": 12,
+            "views": 34,
             "likes": 4,
             "shareUrl": ""
         }
@@ -18,7 +18,7 @@
             "imgUrl": "pexels-taha-samet-arslan-7624629.jpg",
             "details": {
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
-                "views": 10,
+                "views": 140,
                 "likes": 7,
                 "shareUrl": ""
             }
@@ -33,8 +33,8 @@
             "imgUrl": "pexels-olena-bohovyk-10718877.jpg",
             "details": {
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
-                "views": 10,
-                "likes": 7,
+                "views": 20,
+                "likes": 12,
                 "shareUrl": ""
             }
         }
@@ -48,8 +48,8 @@
             "imgUrl": "pexels-serhii-volyk-15460077.jpg",
             "details": {
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque laudantium eaque eius ea, nam commodi sapiente reiciendis dignissimos nesciunt, vero maiores in molestiae eum suscipit qui ducimus labore adipisci.",
-                "views": 10,
-                "likes": 7,
+                "views": 18,
+                "likes": 16,
                 "shareUrl": ""
             }
         }
